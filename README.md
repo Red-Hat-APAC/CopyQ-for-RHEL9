@@ -1,14 +1,14 @@
-# CopyQ-6.1.0-1.el8 (x86_64)
+# CopyQ-6.2.0-1.el9 (x86_64)
 
 ## Installation
 
-`sudo dnf install -y https://github.com/luckylittle/CopyQ-for-RHEL8/releases/download/v6.1.0/CopyQ-6.1.0-1.el8.x86_64.rpm`
+`sudo dnf install -y https://github.com/luckylittle/CopyQ-for-RHEL8/releases/download/v6.2.0/CopyQ-6.2.0-1.el9.x86_64.rpm`
 
-## Checksums
+## MD5 Checksums
 
 ```text
-1f446bcc2966d3fb209d378e96175f0f CopyQ-6.1.0-1.el8.src.rpm
-1ca583a86fe85b6ef1294f64fee2011f CopyQ-6.1.0-1.el8.x86_64.rpm
+875c6d51ec02e30fb556d8fecebcd747 CopyQ-6.2.0-1.el9.src.rpm
+fda3281c3a06ce8923df0258c87b643a CopyQ-6.2.0-1.el9.x86_64.rpm
 ```
 
 ## Build
@@ -28,4 +28,4 @@ lmaly@redhat.com
 
 ---
 
-_Last update: Mon Jun 20 03:18:58 UTC 2022_
+_Last update: Fri Jul  8 00:40:27 UTC 2022_
