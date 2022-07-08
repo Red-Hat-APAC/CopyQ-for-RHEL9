@@ -2,7 +2,7 @@
 
 ## Installation
 
-`sudo dnf install -y https://github.com/luckylittle/CopyQ-for-RHEL8/releases/download/v6.2.0/CopyQ-6.2.0-1.el9.x86_64.rpm`
+`sudo dnf install -y https://github.com/Red-Hat-APAC/CopyQ-for-RHEL9/releases/download/v6.2.0/CopyQ-6.2.0-1.el9.x86_64.rpm`
 
 ## MD5 Checksums
 
