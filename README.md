@@ -7,8 +7,8 @@
 ## MD5 Checksums
 
 ```text
-875c6d51ec02e30fb556d8fecebcd747 CopyQ-6.2.0-1.el9.src.rpm
-fda3281c3a06ce8923df0258c87b643a CopyQ-6.2.0-1.el9.x86_64.rpm
+458288721915514106ab72c039c3ed60 CopyQ-6.2.0-1.el9.src.rpm
+25bd4c3fd8a8bfc5b527576f1c0919d2 CopyQ-6.2.0-1.el9.x86_64.rpm
 ```
 
 ## Build
@@ -28,4 +28,4 @@ lmaly@redhat.com
 
 ---
 
-_Last update: Fri Jul  8 00:40:27 UTC 2022_
+_Last update: Tue Jul 26 23:31:09 UTC 2022_
