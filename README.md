@@ -1,20 +1,20 @@
-# CopyQ-6.2.0-1.el9 (x86_64)
+# CopyQ-6.3.2-1.el9 (x86_64)
 
 ## Installation
 
-`sudo dnf install -y https://github.com/Red-Hat-APAC/CopyQ-for-RHEL9/releases/download/v6.2.0/CopyQ-6.2.0-1.el9.x86_64.rpm`
+`sudo dnf install -y https://github.com/Red-Hat-APAC/CopyQ-for-RHEL9/releases/download/v6.3.2/CopyQ-6.3.2-1.el9.x86_64.rpm`
 
 ## MD5 Checksums
 
 ```text
-458288721915514106ab72c039c3ed60 CopyQ-6.2.0-1.el9.src.rpm
-25bd4c3fd8a8bfc5b527576f1c0919d2 CopyQ-6.2.0-1.el9.x86_64.rpm
+3f10d155f99105e1104c22f67acf3786 CopyQ-6.3.2-1.el9.src.rpm
+70cd4ee2f555977bedfc78482b1ea353 CopyQ-6.3.2-1.el9.x86_64.rpm
 ```
 
 ## Build
 
 ### Requires
-* Podman (v`4.0.2`)
+* Podman (v`4.1.1`)
 
 ### Run
 
@@ -28,4 +28,4 @@ lmaly@redhat.com
 
 ---
 
-_Last update: Tue Jul 26 23:31:09 UTC 2022_
+_Last update: Thu Oct  6 09:37:48 UTC 2022_

@@ -1,7 +1,7 @@
-# Tue Jul 26 23:31:09 UTC 2022
+# Thu Oct  6 09:37:48 UTC 2022
 FROM registry.access.redhat.com/ubi9@sha256:f22a438f4967419bd477c648d25ed0627f54b81931d0143dc45801c8356bd379
 MAINTAINER lmaly@redhat.com
-ENV COPYQ_VER=6.2.0
+ENV COPYQ_VER=6.3.2
 RUN dnf install -y --disableplugin=subscription-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 RUN dnf install -y --enablerepo=rhel-9-for-x86_64-appstream-rpms \
   cmake \
