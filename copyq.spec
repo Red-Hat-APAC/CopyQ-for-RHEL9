@@ -1,5 +1,5 @@
 Name:           CopyQ
-Version:        6.3.2
+Version:        7.0.0
 Release:        1%{?dist}
 Summary:        CopyQ monitors system clipboard and saves its content in customized tabs.
 Group:          Applications/Multimedia
@@ -35,12 +35,18 @@ make DESTDIR=$RPM_BUILD_ROOT install
 /*
 
 %changelog
-* Sat Sep 27 01:28:00 GMT 2022 Hulk
+* Sun Apr 2 17:49:00 GMT+10 2023 Hulk
   Added
-    N/A
+    * Windows installer has an option to install for current user or all users (#1912).
 
   Changed
-    N/A
+    * The preferred format to edit is now "text/plain;charset=utf-8" with "text/plain" as fallback. Additionally, if no such format is available, "text/uri-list" is used.
+    * Toggle Clipboard Storing menu item uses static text and icon instead of changing these dynamically after each use (#2255).
+    * Settings integrity is now handled solely by Qt. Previously, additional *.bak files where created for configuration files.
+    * Commands are no longer migrated to the new format on start. The old command configuration file has been last used in version 3.9.0 (released on 2019-06-27).
+    * Native notification text length is limited now to avoid slow downs when showing notifications in some desktop environments. The limit is about 100,000 characters and 100 lines.
 
   Fixed
-    Fixes potential crash when rendering an empty item list.
+    * Fixes Sort/Reverse Selected Items menu actions (#2267).
+    * Fixes moving items to a tab in tab bar using drag'n'drop (#1246).
+    * Fixes possibly buggy window manager frame geometry (#2247).

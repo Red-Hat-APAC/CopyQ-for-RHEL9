@@ -1,5 +1,6 @@
-#!/bin/zsh
-COPYQ_VER=6.3.2
+#!/bin/bash
+# Tue 18 Apr 2023 06:21:04 UTC
+COPYQ_VER=7.0.0
 ARCH=x86_64
 RELEASEVER=9
 # Run the build
