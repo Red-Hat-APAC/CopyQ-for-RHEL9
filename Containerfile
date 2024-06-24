@@ -1,7 +1,7 @@
-# Thu 13 Jun 2024 22:54:42 UTC
+# Mon 24 Jun 2024 00:51:29 UTC
 FROM registry.access.redhat.com/ubi9/ubi:9.4-1123
 MAINTAINER lmaly@redhat.com
-ENV COPYQ_VER=8.0.0
+ENV COPYQ_VER=9.0.0
 RUN dnf install -y --disableplugin=subscription-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 RUN dnf install -y --enablerepo=rhel-9-for-x86_64-appstream-rpms \
   cmake \
