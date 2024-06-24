@@ -1,4 +1,4 @@
-# CopyQ-8.0.0-1.el9 (x86_64)
+# CopyQ-9.0.0-1.el9 (x86_64)
 
 ## Source
 
@@ -6,13 +6,13 @@ https://github.com/hluk/CopyQ
 
 ## Installation
 
-`sudo dnf install -y https://github.com/luckylittle/CopyQ-for-RHEL9/releases/download/8.0.0/CopyQ-8.0.0-1.el9.x86_64.rpm`
+`sudo dnf install -y https://github.com/Red-Hat-APAC/CopyQ-for-RHEL9/releases/download/9.0.0/CopyQ-9.0.0-1.el9.x86_64.rpm`
 
 ## Md5 Checksums
 
 ```text
-37e2594b8cb31772291170455d5800b2 CopyQ-8.0.0-1.el9.x86_64.rpm
-6ec3c497c37377132e0c9d097f5d0d3d CopyQ-8.0.0-1.el9.src.rpm
+b98bb658c6ccb994f5d161a6c30c1989 CopyQ-9.0.0-1.el9.x86_64.rpm
+c816585c2b45f019597ab66fb245290d CopyQ-9.0.0-1.el9.src.rpm
 ```
 
 ## Build
@@ -32,4 +32,4 @@ lmaly@redhat.com
 
 ---
 
-_Last update: Thu 13 Jun 2024 22:54:42 UTC_
+_Last update: Mon 24 Jun 2024 00:51:29 UTC_
