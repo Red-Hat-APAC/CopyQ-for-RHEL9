@@ -1,5 +1,5 @@
 Name:           CopyQ
-Version:        9.0.0
+Version:        9.1.0
 Release:        1%{?dist}
 Summary:        CopyQ monitors system clipboard and saves its content in customized tabs.
 Group:          Applications/Multimedia
@@ -35,38 +35,20 @@ make DESTDIR=$RPM_BUILD_ROOT install
 /*
 
 %changelog
-* Jun 22, 2024, 06:51 PM GMT+10 2024 Hulk
+* Oct 20, 2024, 5:27 PM GMT+11 Hulk
   Added
-    * Adds editItem() script function for editing any item format (#2672).
-    * Item color is now shown in tray menu as the default icon (#2700).
-
-  Changed
-    * Removes large margins in the tab tree.
-    * Single action "Toggle Tag …" replaces the two separate actions "Tag as …" and
-      "Remove tag …" for each custom tag (this can make the item context menu a lot
-      more compact).
-    * Selected items can now be accessed even from commands started from outside
-      the app using global commands or from command line.
-    * The dialog() script function can now be used for asking Yes/No questions
-      without providing any fields. In such case, the function will return true
-      instead of undefined after accepting the dialog.
-    * The execute() script function now throws an exception when command cannot
-      be executed instead of returning undefine.
+    * Allows processing all clipboard changes (#2787, #2746).
+      If clipboard contains secret (for example, copied from a password manager),
+      onSecretClipboardChanged() script function is called with data containing
+      mimeSecret format set to 1. Also ensures that callbacks are called
+      consistently for all clipboard changes with properly set formats
+      mimeClipboardMode, mimeOutputTab and mimeCurrentTab.
 
   Fixed
-    * Includes many performance improvements for working with large amount of items.
-    * Fixes triggering menu items by number (#2569).
-    * Fixes text color in the internal item editor (#2643).
-    * Fixes showing global shortcuts in tray menu (#2382).
-    * Fixes passing captured texts to automated commands (#2707).
-    * Fixes duplicate synchronized items after tagging or modifying data.
-    * Fixes situation when display commands stop updating items.
-    * The pre-defined "Move to tab" action will be shown only if the current tab is
-      not the same as target tab (#2669). Previously, in such case the item was
-      removed unexpectedly.
-    * Windows: Detect and ignore secrets from more apps (#2679).
-    * Linux: Fixes storing previously synchronized clipboard (#2630).
-    * Linux: Fixes storing selection when "Store text selected using mouse" option
-      is enabled but "Run automatic commands on selection" is disabled (#2651).
-    * Linux: Fixes clipboard synchronization with Qt 6 GUI framework.
-    * Linux: Fixes showing tab tree labels with Qt 6 GUI framework.
+    * Fixes editing multiple items (#2810).
+    * Fixes synchronization plugin causing redundant UI updates and menu misbehavior (#2649).
+    * Fixes showing sub-menus for custom commands in tray menu (#2730).
+    * Fixes switching tab if onItemsLoaded() is overridden (#2788).
+    * Fixes theme option hover_item_css (#2687).
+    * Avoids modifying data from display commands and causing redundant UI updates (#2837).
+    * Avoids sharing execute() state in case it is launched recursively.
