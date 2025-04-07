@@ -1,4 +1,4 @@
-# CopyQ-9.1.0-1.el9 (x86_64)
+# CopyQ-10.0.0-1.el9 (x86_64)
 
 ## Source
 
@@ -6,19 +6,19 @@ https://github.com/hluk/CopyQ
 
 ## Installation
 
-`sudo dnf install -y https://github.com/Red-Hat-APAC/CopyQ-for-RHEL9/releases/download/9.1.0/CopyQ-9.1.0-1.el9.x86_64.rpm`
+`sudo dnf install -y https://github.com/Red-Hat-APAC/CopyQ-for-RHEL9/releases/download/10.0.0/CopyQ-10.0.0-1.el9.x86_64.rpm`
 
 ## Md5 Checksums
 
 ```text
-dec008439eec4548465b0e4f76e7f9f2 CopyQ-9.1.0-1.el9.x86_64.rpm
-d48c29dce3f14d488cd8dbfec3691303 CopyQ-9.1.0-1.el9.src.rpm
+f4764d8dcbbbd7a76cadb0b2cbaa5e1e CopyQ-10.0.0-1.el9.x86_64.rpm
+ae049e91210baf19aa78d502bf9d256d CopyQ-10.0.0-1.el9.src.rpm
 ```
 
 ## Build
 
 ### Requires
-* Podman (v`4.9.4-rhel`)
+* Podman (v`5.2.2`)
 
 ### Run
 
@@ -32,4 +32,4 @@ lmaly@redhat.com
 
 ---
 
-_Last update: Wed 13 Nov 2024 21:22:58 UTC_
+_Last update: Mon 07 Apr 2025 01:50:32 UTC_
