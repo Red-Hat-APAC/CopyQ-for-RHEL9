@@ -35,7 +35,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 /*
 
 %changelog
-* Apr 04, 06:25 AM UTC Hulk
+* Apr 04, 2025, 06:25 AM UTC Hulk
   Added
   * Emacs navigation key-bindings support.
   * Adds support for setting urgency and persistency to notifications. Script
