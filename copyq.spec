@@ -1,5 +1,5 @@
 Name:           CopyQ
-Version:        11.0.0
+Version:        12.0.1
 Release:        1%{?dist}
 Summary:        CopyQ monitors system clipboard and saves its content in customized tabs.
 Group:          Applications/Multimedia
@@ -35,27 +35,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 /*
 
 %changelog
-* Aug 22, 2025, 06:35 PM UTC Hulk
-  Added
-  * Adds support for dark/light window title scheme.
-  * New frameless_window option (#2570) toggles the main window frame and title
-    bar (if supported by the window manager)
-  * Adds support for localizing command names in the command INI files (#3032)
-  * Adds support for showing preview for more image formats
-    (namely ico and webp).
-  * Adds support for more complex network requests in scripts. New
-    NetworkRequest class can be used to set custom headers, HTTP method, number
-    of allowed redirects and timeout.
-
-  Changed
-  * Avoids hiding the main window on backspace (#3107).
-  * Enables Vi/Emacs navigation (#3012) in menus, and Ctrl+[ in Vi and Ctrl+G
-    in Emacs to work in many other places as Esc key (for example, to hide menus,
-    dialogs). Users can override shortcuts, but not some reserved ones in
-    specific cases (mainly, if the item list or a menu has focus).
-  * Selections and current items/rows/data in scripts now only relate to the
-    tab selected with tab(...) in scripts (this is still by default the
-    selected tab when the command started).
-  * Drops unnecessary timeouts when executing commands and actions from scripts.
-  * Avoids fetching and passing clipboard to action()/execute() if the
-    commands do not contains %1 placeholder. This can improve performance.
+* Tue Sep 30 2025 Hluk <hluk@email.cz> - 12.0.1
+  - X11: Fix registering global shortcuts with modifiers (#3212)
+  - macOS: Fix providing builds for Intel architecture
+  - Fix maximum length for session name (16 characters, not 15)

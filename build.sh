@@ -1,8 +1,8 @@
 #!/bin/bash
-# Fri 29 Aug 2025 04:31:29 UTC
-COPYQ_VER=11.0.0
+# Fri 10 Oct 2025 08:04:37 UTC
+COPYQ_VER=12.0.1
 ARCH=x86_64
-RELEASEVER=9
+RELEASEVER=10
 # Run the build
 podman build -t copyq-${COPYQ_VER}-1.el${RELEASEVER}.${ARCH} -f Containerfile .
 podman run --name copyq-${COPYQ_VER}-1.el${RELEASEVER}.${ARCH} copyq-${COPYQ_VER}-1.el${RELEASEVER}.${ARCH}
