@@ -1,6 +1,6 @@
 #!/bin/bash
-# Fri 10 Oct 2025 08:04:37 UTC
-COPYQ_VER=12.0.1
+# Thu 23 Oct 2025 01:59:54 UTC
+COPYQ_VER=13.0.0
 ARCH=x86_64
 RELEASEVER=10
 # Run the build

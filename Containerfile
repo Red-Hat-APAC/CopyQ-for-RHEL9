@@ -1,7 +1,7 @@
-# Fri 10 Oct 2025 08:04:37 UTC
-FROM registry.access.redhat.com/ubi10:10.0-1758699521
+# Thu 23 Oct 2025 01:59:54 UTC
+FROM registry.access.redhat.com/ubi10:10.0-1760519443
 MAINTAINER lmaly@redhat.com
-ENV COPYQ_VER=12.0.1
+ENV COPYQ_VER=13.0.0
 ENV RELEASEVER=10
 RUN dnf install -y --disableplugin=subscription-manager https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
 RUN dnf install -y --enablerepo=rhel-10-for-x86_64-appstream-rpms --enablerepo=codeready-builder-for-rhel-10-x86_64-rpms \

@@ -1,5 +1,5 @@
 Name:           CopyQ
-Version:        12.0.1
+Version:        13.0.0
 Release:        1%{?dist}
 Summary:        CopyQ monitors system clipboard and saves its content in customized tabs.
 Group:          Applications/Multimedia
@@ -35,7 +35,10 @@ make DESTDIR=$RPM_BUILD_ROOT install
 /*
 
 %changelog
-* Tue Sep 30 2025 Hluk <hluk@email.cz> - 12.0.1
-  - X11: Fix registering global shortcuts with modifiers (#3212)
-  - macOS: Fix providing builds for Intel architecture
-  - Fix maximum length for session name (16 characters, not 15)
+* Wed Oct 22 2025 Hluk <hluk@email.cz> - 13.0.0
+  - Windows: Preferences now include auto-start option, previously available only in the installer.
+  - Tabs synchronized with a directory on the disk will now include files from sub-directories (#2638).
+  - Filtering/searching items in large tabs no longer blocks UI (#3111, #3261).
+  - Fixes saving edited HTML and setting style in internal editor (#3227).
+  - Fixes updating selected item colors (#3219).
+  - Wayland: Fixes clipboard access in KDE Plasma 6.5 (#3228). This requires KGuiAddons library installed on the system.
