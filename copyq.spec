@@ -1,5 +1,5 @@
 Name:           CopyQ
-Version:        11.0.0
+Version:        13.0.0
 Release:        1%{?dist}
 Summary:        CopyQ monitors system clipboard and saves its content in customized tabs.
 Group:          Applications/Multimedia
@@ -35,27 +35,10 @@ make DESTDIR=$RPM_BUILD_ROOT install
 /*
 
 %changelog
-* Aug 22, 2025, 06:35 PM UTC Hulk
-  Added
-  * Adds support for dark/light window title scheme.
-  * New frameless_window option (#2570) toggles the main window frame and title
-    bar (if supported by the window manager)
-  * Adds support for localizing command names in the command INI files (#3032)
-  * Adds support for showing preview for more image formats
-    (namely ico and webp).
-  * Adds support for more complex network requests in scripts. New
-    NetworkRequest class can be used to set custom headers, HTTP method, number
-    of allowed redirects and timeout.
-
-  Changed
-  * Avoids hiding the main window on backspace (#3107).
-  * Enables Vi/Emacs navigation (#3012) in menus, and Ctrl+[ in Vi and Ctrl+G
-    in Emacs to work in many other places as Esc key (for example, to hide menus,
-    dialogs). Users can override shortcuts, but not some reserved ones in
-    specific cases (mainly, if the item list or a menu has focus).
-  * Selections and current items/rows/data in scripts now only relate to the
-    tab selected with tab(...) in scripts (this is still by default the
-    selected tab when the command started).
-  * Drops unnecessary timeouts when executing commands and actions from scripts.
-  * Avoids fetching and passing clipboard to action()/execute() if the
-    commands do not contains %1 placeholder. This can improve performance.
+* Wed Oct 22 2025 Hluk <hluk@email.cz> - 13.0.0
+  - Windows: Preferences now include auto-start option, previously available only in the installer.
+  - Tabs synchronized with a directory on the disk will now include files from sub-directories (#2638).
+  - Filtering/searching items in large tabs no longer blocks UI (#3111, #3261).
+  - Fixes saving edited HTML and setting style in internal editor (#3227).
+  - Fixes updating selected item colors (#3219).
+  - Wayland: Fixes clipboard access in KDE Plasma 6.5 (#3228). This requires KGuiAddons library installed on the system.
